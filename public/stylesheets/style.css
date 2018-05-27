@@ -34,6 +34,7 @@ body {
 
 .nav-item {
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .nav-icon {
@@ -41,6 +42,40 @@ body {
     margin-right: 5px;
 }
 
+/* Navbar: newChatroom MODAL */
+#newChatroom .options {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#newChatroom .options-title {
+    font-size: 1.2rem;
+    margin: 0rem 1rem 1.2rem 1rem;
+}
+
+#newChatroom .options-create {
+    color: #17b8a6;
+    
+}
+#newChatroom .options-join {
+    color: #177ab8;
+}
+
+#newChatroom img {
+    padding: 1.5rem;
+}
+
+#newChatroom .btn-create {
+    color: #fff;
+    background: #17b8a6;
+}
+
+#newChatroom .btn-join {
+    color: #fff;
+    background: #177ab8;
+}
 
 /* Chat area */
 
