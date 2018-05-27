@@ -19,7 +19,7 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
     #chat-input {
         width: 100%;
     }
@@ -31,10 +31,6 @@ body {
 
 
 /* Navbar */
-
-.navbar {
-    height: 4rem;
-}
 
 .nav-item {
     margin-left: 30px;
