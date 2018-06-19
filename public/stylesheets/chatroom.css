@@ -49,6 +49,12 @@
     overflow-x: hidden;
 }
 
+@media (max-width: 575.98px) {
+    #chat-message {
+        padding-bottom: 2rem;
+    }
+}
+
 #chat-message ul {
     margin: 0px;
     padding: 0px
