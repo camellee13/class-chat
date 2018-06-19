@@ -1,7 +1,5 @@
 /*
      * LetterAvatar
-     * 
-     * Artur Heinze
      * Create Letter avatar based on Initials
      * based on https://gist.github.com/leecrossley/6027780
      */

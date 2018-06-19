@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="tw">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/chatroom.css">
+    <!--  Feather icons  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Class Chat</title>
+</head>
+
+<body>
+    <!--  Navbar  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+        <!--  Navbar: brand  -->
+        <a class="navbar-brand" href="#"> <img src="/images/creative.svg" width="30" height="30" class="d-inline-block align-top" alt=""> Class Chat </a>
+        <!-- Navbar: Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+        <!-- Navbar: Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#newChatroom"><i data-feather="plus" class="nav-icon"></i><span>新聊天室</span></a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i data-feather="list" class="nav-icon"></i><span>聊天室列表</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i data-feather="log-out" class="nav-icon"></i><span>登出</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar: Modal -->
+    <div class="modal fade" id="newChatroom" tabindex="-1" role="dialog" aria-labelledby="newChatroom" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newChatroom">新聊天室</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="options">
+                                    <div class="options-title options-create">建立</div>
+                                    <div>建立聊天室，發送邀請碼邀請夥伴。</div>
+                                    <img src="/images/connection.svg" class="img-fluid" alt="Responsive image">
+                                    <button type="button" class="btn btn-create">建立聊天室</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="options">
+                                    <div class="options-title options-join">加入</div>
+                                    <div>輸入邀請碼，加入已存在的聊天室。</div>
+                                    <img src="/images/teamwork.svg" class="img-fluid" alt="Responsive image">
+                                    <button type="button" class="btn btn-join">加入聊天室</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="chat-area">
+        <div class="container-fluid inner">
+            <div class="row">
+                <div id="chat-title" class="col">
+                    <span class="badge-info badge-pill pincode-title">123456</span>書報討論</div>
+            </div>
+            <div class="row">
+                <div id="chat-message" class="col">
+                    <ul>
+                        <li class="sent">
+                            <div class="message-header">
+                                <div class="user-avatar"><img avatar="apple72388"></div> <b>apple72388</b> <span>3:25 PM</span> </div>
+                            <p>Who is your favorite entertainer (comedian, musician, actor, etc.)?</p>
+                        </li>
+                        <li class="sent">
+                            <div class="message-header">
+                                <div class="user-avatar"><img avatar="cat37267"></div> <b>cat37267</b> <span>3:25 PM</span> </div>
+                            <p>What was the last funny video you saw?</p>
+                        </li>
+                        <li class="replies">
+                            <div class="message-header text-right"> <b>dog12394</b> <span>3:26 PM</span>
+                                <div class="user-avatar"><img avatar="dog12394"></div>
+                            </div>
+                            <p>What do you do to get rid of stress?</p>
+                        </li>
+                        <li class="replies">
+                            <div class="message-header text-right"> <b>dog12394</b> <span>3:26 PM</span>
+                                <div class="user-avatar"><img avatar="dog12394"></div>
+                            </div>
+                            <p>Do you have any pets? What are their names?</p>
+                        </li>
+                        <li class="sent">
+                            <div class="message-header">
+                                <div class="user-avatar"><img avatar="pig38472"></div> <b>pig38472</b> <span>3:27 PM</span> </div>
+                            <p>Where did you go last weekend? What did you do?</p>
+                        </li>
+                        <li class="sent">
+                            <div class="message-header">
+                                <div class="user-avatar"><img avatar="bottle72642"></div> <b>bottle72642</b> <span>3:27 PM</span> </div>
+                            <p>What three words best describe you?</p>
+                        </li>
+                        <li class="sent">
+                            <div class="message-header">
+                                <div class="user-avatar"><img avatar="water23476"></div> <b>water23476</b> <span>3:27 PM</span> </div>
+                            <p>If you had intro music, what song would it be? Why?</p>
+                        </li>
+                        <li class="sent">
+                            <div class="message-header">
+                                <div class="user-avatar"><img avatar="option23476"></div> <b>option23476</b> <span>3:27 PM</span> </div>
+                            <p>Who is your oldest friend? Where did you meet them?</p>
+                        </li>
+                        <li class="sent">
+                            <div class="message-header">
+                                <div class="user-avatar"><img avatar="line32476"></div> <b>line32476</b> <span>3:27 PM</span> </div>
+                            <p>Are you very active of do you prefer to just relax in your free time?</p>
+                        </li>
+                        <li class="sent">
+                            <div class="message-header">
+                                <div class="user-avatar"><img avatar="feather36546"></div> <b>feather36546</b> <span>3:27 PM</span> </div>
+                            <p>hey!</p>
+                        </li>
+                        <li class="replies">
+                            <div class="message-header text-right"> <b>dog12394</b> <span>3:28 PM</span>
+                                <div class="user-avatar"><img avatar="dog12394"></div>
+                            </div>
+                            <p>What?</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div id="chat-input">
+                    <input type="text" placeholder="Write Your message...">
+                    <button type="button"><i class="send-icon" data-feather="send"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="member" class="d-none d-md-block d-lg-block">
+        <div class="container-fluid inner">
+            <div class="row">
+                <div id="my-profile" class="col"> <img avatar="dog12394">
+                    <p>dog12394</p>
+                    <div class="onoffswitch mx-auto">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                        <label class="onoffswitch-label" for="myonoffswitch"> <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span> </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="member-title" class="col"> 成員名單 </div>
+            </div>
+            <div class="row">
+                <div  class="member-list-div col">
+                    <ul id="member-list">
+                        <li><img avatar="apple72388"><span>apple72388</span> </li>
+                        <li><img avatar="cat37267"> <span>cat37267</span></li>
+                        <li><img avatar="pig38472"> <span>pig38472</span> </li>
+                        <li><img avatar="bottle72642"> <span>bottle72642</span> </li>
+                        <li><img avatar="water23476"> <span>water23476</span> </li>
+                        <li><img avatar="option23476"> <span>option23476</span> </li>
+                        <li><img avatar="line32476"> <span>line32476</span></li>
+                        <li><img avatar="feather36546"><span>feather36546</span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <script>
+        feather.replace()
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="/javascripts/letteravatar.js"></script>
+</body>
+
+</html>

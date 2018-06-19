@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="tw">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/login.css">
+    <!--  Feather icons  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Class Chat</title>
+</head>
+
+<body>
+    <!--  Navbar  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+        <!--  Navbar: brand  -->
+        <a class="navbar-brand" href="#"> <img src="public/images/creative.svg" width="30" height="30" class="d-inline-block align-top" alt=""> Class Chat </a>
+        <!-- Navbar: Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+        <!-- Navbar: Navbar links -->
+        <!--
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#newChatroom"><i data-feather="plus" class="nav-icon"></i><span>新聊天室</span></a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i data-feather="list" class="nav-icon"></i><span>聊天室列表</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i data-feather="log-out" class="nav-icon"></i><span>登出</span></a></li>
+            </ul>
+        </div>
+-->
+    </nav>
+    <!-- Navbar: Modal -->
+    <!--
+    <div class="modal fade" id="newChatroom" tabindex="-1" role="dialog" aria-labelledby="newChatroom" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newChatroom">新聊天室</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="options">
+                                    <div class="options-title options-create">建立</div>
+                                    <div>建立聊天室，發送邀請碼邀請夥伴。</div>
+                                    <img src="public/images/connection.svg" class="img-fluid" alt="Responsive image">
+                                    <button type="button" class="btn btn-create">建立聊天室</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="options">
+                                    <div class="options-title options-join">加入</div>
+                                    <div>輸入邀請碼，加入已存在的聊天室。</div>
+                                    <img src="public/images/teamwork.svg" class="img-fluid" alt="Responsive image">
+                                    <button type="button" class="btn btn-join">加入聊天室</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <section id="login-register">
+        <div class="container-fluid inner">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button id="login-form-btn" type="button" class="btn btn-block btn-info btn-custom">Login</button>
+                                </div>
+                                <div class="col text-center">
+                                    <button id="register-form-btn" type="button" class="btn btn-block btn-light btn-custom">Register</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <!--   login-form   -->
+                                    <form id="login-form" action="#" method="post" role="form" class="form-area show">
+                                        <div class="form-group">
+                                            <input type="text" name="username" id="username" class="form-control" placeholder="Username" value=""> </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password" id="password" class="form-control" placeholder="Password"> </div>
+                                        <div class="form-group form-check">
+                                            <label type="checkbox" name="remember" id="remember" class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" for="remember"> Remember me </label>
+                                        </div>
+                                        <button type="submit" name="login-submit" id="login-submit" class="btn btn-block btn-info">Submit</button>
+                                    </form>
+                                    <!--  register-form  -->
+                                    <form id="register-form" action="#" method="post" role="form" class="form-area hide">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" value=""> </div>
+                                        <div class="form-group">
+                                            <input type="text" name="username" id="username" class="form-control" placeholder="Username" value=""> </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password" id="password" class="form-control" placeholder="Password"> </div>
+                                        <div class="form-group">
+                                            <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="Confirm Password"> </div>
+                                        <button type="submit" name="register-submit" id="register-submit" class="btn btn-block btn-info">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Optional JavaScript -->
+    <script>
+        feather.replace()
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> 
+    <script src="public/javascripts/formdisplay.js"></script>
+</body>
+
+</html>

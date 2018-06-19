@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="tw">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/createroom.css">
+    <!--  Feather icons  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--  Font Awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>建立聊天室 - Class Chat</title>
+</head>
+
+<body>
+    <!--  Navbar  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+        <!--  Navbar: brand  -->
+        <a class="navbar-brand" href="#"> <img src="public/images/creative.svg" width="30" height="30" class="d-inline-block align-top" alt=""> Class Chat </a>
+        <!-- Navbar: Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+        <!-- Navbar: Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#newChatroom"><i data-feather="plus" class="nav-icon"></i><span>新聊天室</span></a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i data-feather="list" class="nav-icon"></i><span>聊天室列表</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i data-feather="log-out" class="nav-icon"></i><span>登出</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar: Modal -->
+    <div class="modal fade" id="newChatroom" tabindex="-1" role="dialog" aria-labelledby="newChatroom" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newChatroom">新聊天室</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="options">
+                                    <div class="options-title options-create">建立</div>
+                                    <div>建立聊天室，發送邀請碼邀請夥伴。</div> <img src="public/images/connection.svg" class="img-fluid" alt="Responsive image">
+                                    <button type="button" class="btn btn-create">建立聊天室</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="options">
+                                    <div class="options-title options-join">加入</div>
+                                    <div>輸入邀請碼，加入已存在的聊天室。</div> <img src="public/images/teamwork.svg" class="img-fluid" alt="Responsive image">
+                                    <button type="button" class="btn btn-join">加入聊天室</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="create-area">
+        <div class="container inner">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h2>建立聊天室</h2> </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="roomName">聊天室名稱</label>
+                                                    <input type="text" class="form-control" id="roomName" required> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="people">人數上限</label>
+                                                    <input type="number" class="form-control" id="people" required> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="people">聊天模式</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="radio1">
+                                                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1 </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="radio2">
+                                                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2 </label>
+                                                </div>
+                                            </div>
+                                        </div>
+<!--
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label>時間資訊</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="week" required>
+                                                        <option>星期一</option>
+                                                        <option>星期二</option>
+                                                        <option>星期三</option>
+                                                        <option>星期四</option>
+                                                        <option>星期五</option>
+                                                        <option>星期六</option>
+                                                        <option>星期日</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                                                        <input type="text" id="time" class="form-control datetimepicker-input" data-target="#datetimepicker3" required>
+                                                        <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                                            <div class="input-group-text"><i class="fa fa-clock"></i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+-->
+                                        <button type="submit" class="btn btn-info btn-block">建立</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <script>
+        feather.replace()
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!--  CDNJS  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/css/tempusdominus-bootstrap-4.min.css" />
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker3').datetimepicker({
+                format: 'LT'
+            });
+        });
+    </script>
+</body>
+
+</html>

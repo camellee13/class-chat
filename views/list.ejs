@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="tw">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/list.css">
+    <!--  Feather icons  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>聊天室列表 - Class Chat</title>
+</head>
+
+<body>
+    <!--  Navbar  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+        <!--  Navbar: brand  -->
+        <a class="navbar-brand" href="#"> <img src="/images/creative.svg" width="30" height="30" class="d-inline-block align-top" alt=""> Class Chat </a>
+        <!-- Navbar: Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+        <!-- Navbar: Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#newChatroom"><i data-feather="plus" class="nav-icon"></i><span>新聊天室</span></a></li>
+                <!-- <li class="nav-item"> <a class="nav-link" href="#"><i data-feather="list" class="nav-icon"></i><span>聊天室列表</span></a> </li> -->
+                <li class="nav-item"> <a class="nav-link" href="#"><i data-feather="log-out" class="nav-icon"></i><span>登出</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar: Modal -->
+    <div class="modal fade" id="newChatroom" tabindex="-1" role="dialog" aria-labelledby="newChatroom" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newChatroom">新聊天室</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="options">
+                                    <div class="options-title options-create">建立</div>
+                                    <div>建立聊天室，發送邀請碼邀請夥伴。</div> <img src="/images/connection.svg" class="img-fluid" alt="Responsive image">
+                                    <button type="button" class="btn btn-create">建立聊天室</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="options">
+                                    <div class="options-title options-join">加入</div>
+                                    <div>輸入邀請碼，加入已存在的聊天室。</div> <img src="/images/teamwork.svg" class="img-fluid" alt="Responsive image">
+                                    <button type="button" class="btn btn-join">加入聊天室</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="list-area">
+        <div class="container inner">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>聊天室列表</h1> </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-11">
+                    <div class="card">
+                        <div class="card-header"><span class="badge-info badge-pill mr-1">123456</span>書報討論</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">時間資訊：星期三 01:00 PM</li>
+                                <li class="list-group-item">人數上限：100</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col"> <a href="#" class="btn btn-secondary btn-block" role="button"><i data-feather="message-circle"></i></a> </div>
+                                <div class="col"> <a href="#" class="btn btn-warning btn-block" role="button"><i data-feather="edit-2"></i></a> </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#123456"><i data-feather="x"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-11">
+                    <div class="card">
+                        <div class="card-header"><span class="badge-info badge-pill mr-1">873842</span>使用者體驗設計</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">時間資訊：星期四 09:00 AM</li>
+                                <li class="list-group-item">人數上限：80</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col"> <a href="#" class="btn btn-secondary btn-block" role="button"><i data-feather="message-circle"></i></a> </div>
+                                <div class="col"> <a href="#" class="btn btn-warning btn-block disabled" role="button"><i data-feather="edit-2"></i></a> </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#123456"><i data-feather="x"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal -->
+            <div class="modal fade" id="123456" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">離開聊天室</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Pincode: 123456</li>
+                                <li class="list-group-item">聊天室名稱: 書報討論</li>
+                                <li class="list-group-item">時間資訊: 星期三 01:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button> <a class="btn btn-danger" href="#" role="button">離開</a> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="873842" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">離開聊天室</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Pincode: 873842</li>
+                                <li class="list-group-item">聊天室名稱: 使用者體驗設計</li>
+                                <li class="list-group-item">時間資訊: 星期四 09:00 AM</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button> <a class="btn btn-danger" href="#" role="button">離開</a> </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
+    <!-- Optional JavaScript -->
+    <script>
+        feather.replace()
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+
+</html>
