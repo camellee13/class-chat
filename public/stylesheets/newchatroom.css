@@ -57,8 +57,10 @@
     font-size: .9rem;
 }
 
-#chat-message table {
-    margin-bottom: 1rem;
+@media (max-width: 575.98px) {
+    #chat-message {
+    padding-bottom: 2rem;
+    }
 }
 
 #chat-message table thead {
