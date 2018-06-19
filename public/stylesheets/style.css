@@ -5,7 +5,7 @@ body {
 
 /* container inner */
 .inner {
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 
@@ -72,7 +72,6 @@ body {
     z-index: 99px;
     height: 3rem;
     background: white;
-    display: inline;
 }
 
 #chat-input textarea {
